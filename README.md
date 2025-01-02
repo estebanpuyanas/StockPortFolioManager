@@ -9,7 +9,10 @@ Alternatively, you can clone the repository by inserting the repository's `.git`
 
 2. Open the project in VS Code <br>
 
-Once in VS Code look for the `.code-workspace` file. The virtual environment is configured to activate automatically when you open a terminal in VSCode. If you are working from a Mac/Linux machine make sure the following line in the `.code-workspace` file is uncommented: <br>
+Create the virtual enviornment by executing the following command in the root folder of the project: <br>
+`python3 -m venv .venv` <br>
+
+After this, look for the `.code-workspace` file. This file configures the virtual environment to activate automatically when you open a terminal in VSCode. If you are working from a Mac/Linux machine make sure the following line in the `.code-workspace` file is uncommented: <br>
 `"python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python", `. <br>
 
 Otherwise, if working from a Windows make sure the following line is uncommented and comment out the Mac/Linux line:<br>
